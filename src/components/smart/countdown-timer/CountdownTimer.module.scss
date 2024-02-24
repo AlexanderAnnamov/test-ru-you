@@ -1,0 +1,56 @@
+.timerComponent {
+    &__inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    &__panel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+        margin-top: 20px;
+    }
+    &__btnpanel {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__progressbar {
+        width: 400px;
+        border: "2px solid #009ba8";
+        border-radius: 999px;
+        img {
+            position: absolute;
+            width: 40px;
+        }
+    }
+}
+
+.button {
+    background-color: #1a94cc;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.primary {
+    background-color: #a1e20a;
+}
+
+.primaryLight {
+    background-color: #a1e20aa3;
+}
+
+.primaryGreat {
+    background-color: #a1e20a58;
+}
+
+.excellentBlack {
+    background-color: black;
+}
+
+.greatGreen {
+    background-color: #079863;
+}

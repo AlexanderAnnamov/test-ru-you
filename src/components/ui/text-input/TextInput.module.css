@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    height: 100vh;
+    position: relative;
+    margin: 0;
+}
+
+.controlGroup {
+    padding-top: 23px;
+    position: relative;
+}
+
+.controlGroup input {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: 3px solid #1A94CC;
+    background: #fff;
+    border-radius: 12px;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    outline: none;
+    padding: 30px 15px 2px 15px;
+    transition-property: border, padding;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    width: 100%;
+}
+
+.controlGroup input:focus {
+    border-color: #079863;
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.controlGroup input + label {
+    background: #1A94CC;
+    color: #fff;
+    font-weight: 500;
+    left: 0;
+    padding: 5px 20px 5px 20px;
+    position: absolute;
+    top: 23px;
+    transition-property: top, background;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    border-radius: 5px;
+}
+
+.controlGroup input:focus + label {
+    background: #079863;
+    top: 0;
+}
