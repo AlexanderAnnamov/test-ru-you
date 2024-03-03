@@ -35,11 +35,11 @@ export const CountdownTimer: React.FC = () => {
     if (countdown === 0 && runTime) {
       clearInterval(timerId.current);
       time = 0;
-      setRunTime((prev) => (prev = false));
-      setMinutes((prev) => (prev = ""));
-      setHours((prev) => (prev = ""));
-      setSeconds((prev) => (prev = ""));
-      setShowElement((prev) => (prev = true));
+      setRunTime(false);
+      setMinutes("");
+      setHours("");
+      setSeconds("");
+      setShowElement(true);
     }
     if (countdown <= 10 && time) {
       setColorIndicator(true);
