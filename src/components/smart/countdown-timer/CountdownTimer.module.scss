@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
+.timerComponent {
+    &__inputs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        flex-wrap: wrap;
+    }
+    &__panel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 40px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    &__btnpanel {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__progressbar {
+        width: 400px;
+        border: "2px solid #009ba8";
+        border-radius: 999px;
+        img {
+            position: absolute;
+            width: 40px;
+        }
+    }
+}
+
+.button {
+    background-color: #1a94cc;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: rgba(132, 132, 132, 0.553);
+}
+
+.primary {
+    background-color: #a1e20a;
+}
+
+.primaryLight {
+    background-color: #a1e20aa3;
+}
+
+.primaryGreat {
+    background-color: #a1e20a58;
+}
+
+.excellentBlack {
+    background-color: black;
+}
+
+.greatGreen {
+    background-color: #079863;
+}
