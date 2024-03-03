@@ -62,10 +62,10 @@ export const CountdownTimer: React.FC = () => {
   };
 
   const resetTime = () => {
-    setMinutes((prev) => (prev = ""));
-    setSeconds((prev) => (prev = ""));
-    setHours((prev) => (prev = ""));
-    setRunTime((prev) => (prev = false));
+    setMinutes("");
+    setSeconds("");
+    setHours("");
+    setRunTime(false);
   };
 
   const handleInputPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
