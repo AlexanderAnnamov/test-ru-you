@@ -1,5 +1,3 @@
-import React from "react";
-
 import { CountdownTimer } from "../../components/smart/countdown-timer/CountdownTimer";
 
 import styles from './Timer.module.scss'

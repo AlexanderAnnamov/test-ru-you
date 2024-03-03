@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Palette } from "../../components/smart/palette/Palette";
 
 import styles from "./Palette.module.scss";

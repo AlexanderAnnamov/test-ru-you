@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route} from "react-router-dom";
 
 import { TimerPage } from "./pages/timer/Timer";
 import { PalettePage } from "./pages/palette/Palette";
