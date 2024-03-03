@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./TextInput.module.css";
+import styles from "./TextInput.module.scss";
 
 type TextInputProps = React.DetailedHTMLProps<
   React.InputHTMLAttributes<HTMLInputElement>,
@@ -8,7 +8,7 @@ type TextInputProps = React.DetailedHTMLProps<
 > & {};
 
 export const TextInput: React.FC<TextInputProps> = (props) => {
-  const { placeholder, onClick } = props;
+  const { placeholder} = props;
   return (
     <div className={styles.container}>
       <div className={styles.controlGroup}>

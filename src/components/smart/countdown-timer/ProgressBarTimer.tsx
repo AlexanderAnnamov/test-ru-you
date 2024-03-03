@@ -5,22 +5,17 @@ import { formatTime } from "../../../helpers/formatTime";
 
 import ClockIcon from "../../../assets/images/clock.gif";
 
-import styles from "./CountdownTimer.module.scss";
+import type { ProgressBarTimerProps } from "../../../types/timerTypes";
 
-interface ProgressBarTimerProps {
-  runTime: boolean;
-  countdown: number;
-  time: number;
-  colorIndicator: boolean;
-}
+import styles from "./CountdownTimer.module.scss";
 
 export const ProgressBarTimer: React.FC<ProgressBarTimerProps> = ({
   runTime,
   countdown,
   time,
-  colorIndicator
+  colorIndicator,
 }) => {
-    const color = colorIndicator ? "red" : "black";
+  const color = colorIndicator ? "red" : "black";
   return (
     <div className={styles.timerComponent__progressbar}>
       {runTime && <img src={ClockIcon} alt="" />}
@@ -30,7 +25,7 @@ export const ProgressBarTimer: React.FC<ProgressBarTimerProps> = ({
         showValue={false}
         sx={{
           strokeColor: color,
-          barWidth: 4,
+          barWidth: 2,
           textColor: color,
         }}
       />

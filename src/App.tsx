@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 
-import { Timer } from "./pages/timer/Timer";
-import { Palette } from "./pages/palette/Palette";
+import { TimerPage } from "./pages/timer/Timer";
+import { PalettePage } from "./pages/palette/Palette";
 import { NotFound } from "./pages/not-found/NotFound";
 import { Layout } from "./pages/layout/Layout";
 
@@ -12,8 +12,8 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/timer" element={<Timer />} />
-          <Route path="/palette" element={<Palette />} />
+          <Route path="/timer" element={<TimerPage />} />
+          <Route path="/palette" element={<PalettePage />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

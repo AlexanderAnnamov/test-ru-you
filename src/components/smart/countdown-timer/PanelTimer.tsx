@@ -2,29 +2,16 @@ import React from "react";
 
 import { Button } from "../../ui/button/Button";
 
+import { PanelTimerProps } from "../../../types/timerTypes";
+
 import styles from "./CountdownTimer.module.scss";
-
-interface PanelTimerProps {
-  children: React.ReactNode;
-  setMinutes: (minutes: string) => void;
-  setSeconds: (seconds: string) => void;
- 
-  minutes: string;
-  seconds: string;
-
-  stopTime: () => void;
-  startTime: () => void;
-  resetTime: () => void;
-}
 
 export const PanelTimer: React.FC<PanelTimerProps> = ({
   children,
   setMinutes,
   setSeconds,
- 
   minutes,
   seconds,
-
   startTime,
   stopTime,
   resetTime,

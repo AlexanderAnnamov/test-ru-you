@@ -5,16 +5,7 @@ type ButtonProps = React.DetailedHTMLProps<
   HTMLButtonElement
 > & {};
 
-export const Button: React.FC<ButtonProps> = (
-   props
-  ) => { 
-    const {children} = props
-  return (
-    <button 
-     {...props}
-    >
-    {children}
-    </button>
-  );
-}
-
+export const Button: React.FC<ButtonProps> = (props) => {
+  const { children } = props;
+  return <button {...props}>{children}</button>;
+};

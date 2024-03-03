@@ -80,7 +80,6 @@ export const CountdownTimer: React.FC = () => {
         <Indicator setShowElement={setShowElement}>Done!</Indicator>
       )}
      
-
       <InputsTimer
         handleInputPress={handleInputPress}
         setMinutes={setMinutes}
@@ -96,8 +95,6 @@ export const CountdownTimer: React.FC = () => {
         seconds={seconds}
         setMinutes={setMinutes}
         setSeconds={setSeconds}
-     
-        
         startTime={startTime}
         stopTime={stopTime}
         resetTime={resetTime}
